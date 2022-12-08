@@ -1,0 +1,21 @@
+a {
+    text-decoration: none;
+    color: #212121;
+}
+
+ul {
+    display: flex;
+}
+
+body {
+    min-width: 1600px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    color: #212121;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
