@@ -447,7 +447,7 @@ p {
   position: relative;
 }
 
-.iimages__inner {
+.images__inner {
   display: flex;
   position: absolute;
   bottom: 0px;
