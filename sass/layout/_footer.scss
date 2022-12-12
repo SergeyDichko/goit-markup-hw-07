@@ -1,29 +1,21 @@
 footer {
-    min-width: 1600px;
+    // min-width: 1600px;
     background-color: $fon-color;
     padding: 60px 0;
 
 
 
 }
-
+.footer__container{
+    text-align: center;
+}
 
 
 address {
     font-style: normal;
 }
 
-footer ul {
-    display: block;
-}
 
-footer li {
-    line-height: 1.5;
-    margin-bottom: 9px;
-&:last-child {
-        margin-bottom: 0;
-    }
-}
 
 
 
@@ -32,6 +24,7 @@ footer li {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    margin-bottom: 8px;
 }
 
 .address__link[href="mailto:info@devstudio.com"] {
@@ -39,6 +32,7 @@ footer li {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    margin-bottom: 8px;
 }
 
 .address__link[href="tel:+380961111111"] {
@@ -48,19 +42,16 @@ footer li {
     letter-spacing: 0.03em;
 }
 
-.footer__container {
-    display: flex;
-    align-items: baseline;
-}
 
-.footer__wrap {
+
+
+.networks__wrap {
     display: flex;
     gap: 10px;
+    justify-content: center;
 }
 
-.footer__contakt {
-    margin-right: 70px;
-}
+
 
 footer p {
     margin-bottom: 20px;
@@ -71,6 +62,22 @@ footer p {
     text-transform: uppercase;
     color: $font-color;
 }
+.networks{
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+@media (min-width: 768px){
+    .networks{
+     padding: 0;
+    }
+   
+        .footer__wrap{
+            display: flex;
+            justify-content: space-around;
+            // padding-bottom: 60px;
+        }
+    
+}
 
 .networks__link {
     background-color: rgba(255, 255, 255, 0.1);
@@ -80,35 +87,84 @@ footer p {
 }
 
 .footer__mail input {
-    width: 358px;
+    width: 100%;
     background-color:$fon-color;
     color: $p-color;
     border-color: $p-color;
     padding: 15px;
-
+    margin-bottom: 20px;
+}
+@media (min-width: 768px){
+    .footer__mail input {
+        width: 450px;
+    }
 }
 
-.footer__mail {
-    margin-left: 93px;
-}
 
-.footer__btn {
+
+.footer__btn  {
     position: relative;
     top: 3px;
     margin-left: 12px;
-    bottom: 10px 28px;
+    padding: 10px 28px;
     font-weight: 700;
     font-size: 16px;
     line-height: 30px;
-    /* identical to box height, or 188% */
     letter-spacing: 0.06em;
 
     color: $font-color;
-    background-color:$brand-color;
+    background-color: $brand-color;
+}
+@media (min-width: 768px){
+    .footer__btn {
+        display: block;
+        margin: 0 auto;
+    }
 }
 
 .footer__btn svg {
     position: relative;
     top: 5px;
     margin-left: 10px;
+}
+@media (min-width: 1200px){
+
+    footer ul {
+    display: block;
+}
+
+footer li {
+    line-height: 1.5;
+    margin-bottom: 9px;
+&:last-child {
+        margin-bottom: 0;
+    }
+}
+    .footer__container {
+    display: flex;
+
+    text-align: start;
+}
+
+     .footer__contakt{
+        display: inline-block;
+        }
+
+
+    .footer__contakt {
+    margin-right: 70px;
+}
+   
+    .footer__mail input {
+        width: 358px;
+        margin-bottom: 0;
+    }
+
+    .footer__mail {
+    margin-left: 93px;
+}
+.footer__mail--inner{
+display: flex;
+gap: 12px;
+}
 }
