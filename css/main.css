@@ -947,6 +947,7 @@ footer p {
   .footer__wrap {
     display: flex;
     justify-content: space-around;
+    margin-bottom: 60px;
   }
 }
 .networks__link {
